@@ -1,7 +1,10 @@
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond $1 !^(index\.php|images|asset|robots\.txt)
+Options +FollowSymLinks
+Options -Indexes
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteRule ^$ /vegshop/index.php [L] 
+RewriteCond $1 !^(index\.php|resources|images|css|js|robots\.txt|favicon\.ico)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?/$1 [L]
-</IfModule>
+RewriteRule ^(.*)$ /vegshop/index.php/$1 [L,QSA
