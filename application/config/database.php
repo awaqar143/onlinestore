@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'https://onlinedokan.herokuapp.com/',
+	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'root123',
 	'database' => 'shop',
