@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root123',
+	'hostname' => 'ec2-50-16-198-4.compute-1.amazonaws.com:5432',
+	'username' => 'zigpbqueunxvbc',
+	'password' => '5534e7cc2be1440e8226d7551c4ea2e075663c6f4f45d8db312871e55ecc4598',
 	'database' => 'shop',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
